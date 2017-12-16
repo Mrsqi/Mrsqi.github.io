@@ -1,0 +1,366 @@
+/*Demo styles*/
+html, body {
+    position: relative;
+    height: 100%;
+}
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: url("../images/53b7de47ae0aa.jpg");
+    background-size: 100% 100%;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+/*音乐开始*/
+#music{
+    width: 60px;
+    height: 60px;
+    right: 2%;
+    top:2%;
+    position: fixed;
+    z-index: 10;
+
+}
+#music .musicbg{
+   width: 60px;
+    height: 60px;
+}
+#music img.musicimg{
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    width: 44px;
+    height: 44px;
+    animation: xuanzhuan 2s linear infinite;
+}
+@keyframes xuanzhuan {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+/*音乐结束*/
+/*第一屏开始*/
+.swiper-slide.one{
+    width: 100%;
+    height: 100%;
+}
+.one1{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.one1 img{
+    height: 100%;
+    width: 100%;
+}
+.one2{
+    width: 50%;
+    height: 50%;
+}
+.one2 img{
+    width: 100%;
+    position: relative;
+    top: 10%;
+    left: 54%;
+}
+.one3 img{
+    width: 80%;
+}
+.one3 .one1_1{
+    position: absolute;
+    top: 25%;
+    left: -37%;
+}
+.one3 .one1_2{
+    position: absolute;
+    top: 45%;
+    left: -37%;
+}
+@media screen and (max-width: 1024px){
+    .swiper-slide.one .one3{
+        width: 50%;
+        height: 50%;
+        position: relative;
+        top: 4%;
+        z-index: 999;
+    }
+}
+@media screen and (max-width: 414px){
+    .swiper-slide.one .one3{
+        width: 50%;
+        height: 50%;
+        position: relative;
+        top: 0;
+        z-index: 999;
+    }
+}
+.one4{
+    font-size:5vw;
+    color: rgba(109, 23, 183, 0.88);
+    width: 100%;
+    height: 30%;
+    margin: auto;
+    position: absolute;
+    z-index: 999;
+    top: 70%;
+}
+/*第一屏结束*/
+/*第二屏开始*/
+.two1{
+    width: 70%;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 30%;
+    font-size: 4vw;
+}
+.p1{
+    width: 50%;
+    position: relative;
+}
+.p2{
+    width: 100%;
+    position: relative;
+    top: 0;
+    line-height: 10vw;
+    color:rgba(109, 23, 183, 0.88);
+}
+.p3{
+    color:rgba(109, 23, 183, 0.88);
+    width: 100%;
+    position: relative;
+    top: 0;
+}
+.p4{
+    width: 100%;
+    color:rgba(109, 23, 183, 0.88);
+    position: relative;
+}
+/*背景*/
+.bg{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    overflow: hidden;
+}
+.bg2{
+    position: absolute;
+    top: -30%;
+    left: 50%;
+    width: 100%;
+}
+.bg1{
+    position: absolute;
+    top: 60%;
+    left: -50%;
+    width: 100%;
+}
+/*第二屏结束*/
+/*第三屏开始*/
+.two2{
+    width: 70%;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 23%;
+    font-size: 4vw;
+}
+.two2 p{
+    width: 100%;
+    position: relative;
+    top: 0;
+    line-height: 8vw;
+    color: rgba(109, 23, 183, 0.88);
+}
+
+/*第三屏结束*/
+/*第四屏开始*/
+.swiper-slide.four .bg img{
+    z-index: 2;
+}
+.swiper-slide.four .top{
+    position: absolute;
+    width: 80%;
+    height: 60%;
+    top: 15%;
+    background: #fa8194;
+    z-index: 1;
+    font-size: 4vw;
+}
+.swiper-slide.four .top .am,.pm{
+    width: 80%;
+    margin: auto;
+    color: #fff;
+    position: relative;
+    top:6%;
+    font-size: 4vw;
+    line-height: 7vw;
+}
+.swiper-slide.four .top .am,.pm::after{
+    clear: both;
+    content: "";
+    display: table;
+}
+.swiper-slide.four .top .am p,.pm p{
+    margin: 0;
+}
+.swiper-slide.four .top h2,h3{
+    color: white;
+    margin: auto;
+}
+.swiper-slide.four .top h2{
+    margin-top: 8%;
+}
+.swiper-slide.four .top .am-left{
+   float: left;
+}
+.swiper-slide.four .top .am-right{
+    float: right;
+}
+.swiper-slide.four .top .pm-left{
+    float: left;
+}
+.swiper-slide.four .top .pm-right{
+    float: right;
+}
+/*第四屏结束*/
+/*第五屏开始*/
+.swiper-slide.five .bg img{
+    z-index: 2;
+}
+.swiper-slide.five{
+    width: 100%;
+    height: 100%;
+}
+.five1{
+    width: 80%;
+    height: 60%;
+    background: #fa8194;
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    z-index: 1;
+}
+input[type="text"]{
+    width: 68%;
+    height: 8%;
+    margin: auto;
+    border-radius:6px;
+    outline: none;
+    padding-left: 2%;
+    margin-top: 10%;
+}
+input[type="button"]{
+    width: 68%;
+    height: 8%;
+    margin: auto;
+    border-radius:5px;
+    outline: none;
+    margin-top: 10%;
+}
+div h3{
+    margin-top: 10%;
+    margin-bottom: 2%;
+}
+.input1{
+    margin-top: 10% !important;
+    border: 1px solid white;
+}
+.input2,.input3{
+    border: 1px solid white;
+}
+.input2,.input3,.input4{
+    margin-top: 10%;
+}
+.input4{
+    background: #97005a;
+    border: 1px solid #97005a;
+}
+/*第五屏结束*/
+/*第六屏开始*/
+.swiper-slide.six{
+    width: 100%;
+    height: 100%;
+}
+.zuopin{
+    width: 70%;
+    height: 80%;
+    margin: auto;
+}
+.zuopin img{
+    width: 100%;
+    height: 100%;
+}
+.zuopin h3{
+    color: rgba(109, 23, 183, 0.88);
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+/*第六屏结束*/
+/*第七屏开始*/
+.swiper-slide.seven{
+    width: 100%;
+    height: 100%;
+}
+#map{
+    margin: auto;
+}
+.weizhi h3{
+    color:rgba(109, 23, 183, 0.88);
+    margin-top: 10%;
+    margin-bottom:20%;
+}
+/*第七屏结束*/
+/*第八屏开始*/
+.swiper-slide.eight{
+    width: 100%;
+    height: 100%;
+}
+.eight1{
+    width: 80%;
+    height: 60%;
+    background: #fa8194;
+    position: absolute;
+    top: 18%;
+    left: 10%;
+    z-index: 1;
+}
+.eight1 h3{
+    margin-bottom: 5%;
+}
+.eight2{
+    width: 80%;
+    height: 60%;
+    margin: auto;
+}
+.erweima{
+    width: 100%;
+    height: 100%;
+}
+/*第八屏结束*/
